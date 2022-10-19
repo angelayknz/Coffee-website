@@ -24,7 +24,7 @@
         </ul>
     </header>
     
-    <section class="home" id="home">
+    <!-- <section class="home" id="home">
         <div class="home-text">
             <span>Welcome To</span>
             <h1>Starbucks Coffee</h1>
@@ -34,8 +34,33 @@
         <div class="home-img">
             <img src="img/home.png" alt="">
         </div>
-    </section>
+    </section> -->
 
+    <section class="home" id="home">
+        <div class="content">
+            <div class="text">
+                <h1>It's not just coffee It's <span>Starbucks</span> </h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et ducimus repellat optio quasi nulla? Officia.</p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div class="imgbig">
+                <img src="img/imgbig.png" alt="" class="imgbig starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="img/thumb1.png" onmouseover="imgSlider('img/thumb1.png')"></li>
+            <li><img src="img/thumb2.png" onmouseover="imgSlider('img/thumb2.png')"></li>
+            <li><img src="img/thumb3.png" onmouseover="imgSlider('img/thumb3.png')"></li>
+        </ul>
+            <!-- <div class="social">
+                <li><ion-icon name="logo-facebook"></ion-icon></li>
+                <li><ion-icon name="logo-instagram"></ion-icon></li>
+                <li><ion-icon name="logo-twitter"></ion-icon></li>
+            </div> -->
+    </section>
+  
+    
     <section class="shop" id="shop">
         <div class="heading">
             <span>Shop Now</span>
@@ -156,5 +181,12 @@
     </section>
 
     <script src="main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks'). src=anything
+        }
+    </script>
 </body>
 </html>
